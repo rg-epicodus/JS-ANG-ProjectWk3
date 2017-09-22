@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AnimalDisplayComponent } from './animal-display/animal-display.component';
+import { NewAnimalComponent } from './new-animal/new-animal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimalDisplayComponent
+    AnimalDisplayComponent,
+    NewAnimalComponent
   ],
   imports: [
     BrowserModule,

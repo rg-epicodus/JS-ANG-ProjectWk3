@@ -1,0 +1,34 @@
+<button class="btn btn-info" (click)="newAnimalForm = true">New Animal</button>
+  <div *ngIf="newAnimalForm === true">
+    <h1>New Animal</h1>
+
+    <label>Enter Animal species:</label>
+    <input #newSpecies required><br>
+
+    <label>Enter Animal name:</label>
+    <input #newName required><br>
+
+    <label>Enter Animal age:</label>
+    <input #newAge required><br>
+
+    <label>Enter Animal diet:</label>
+    <input #newDiet required><br>
+
+    <label>Enter Animal location:</label>
+    <input #newLocation required><br>
+
+    <label>Enter Animal caretakers:</label>
+    <input #newCaretakers required><br>
+
+    <label>Enter Animal sex:</label>
+    <input #newSex required><br>
+
+    <label>Enter Animal likes:</label>
+    <input #newLikes required><br>
+
+    <label>Enter Animal dislikes:</label>
+    <input #newDislikes required><br>
+
+
+    <button class="btn btn-info" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value = ''; newName.value = ''; newAge.value = ''; newDiet.value = ''; newLocation.value = ''; newCaretakers.value = ''; newSex.value = ''; newLikes.value = ''; newDislikes.value = ''; newAnimalForm = false">Add</button>
+  </div>
