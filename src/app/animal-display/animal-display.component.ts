@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Animal } from 'app/animal.model';
 
 @Component({
-  selector: 'app-animal-display',
+  selector: 'animal-display',
   templateUrl: './animal-display.component.html',
   styleUrls: ['./animal-display.component.css']
 })
-export class AnimalDisplayComponent implements OnInit {
+export class AnimalDisplayComponent {
+  @Input() childAnimalList: Animal[];
   species = 'Arctic Fox';
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 }

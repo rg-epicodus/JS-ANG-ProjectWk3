@@ -1,3 +1,10 @@
-<p>
-  animal-display works!
-</p>
+<div class="container">
+  <p>
+    animal-display works!
+  </p>
+  <tbody>
+    <tr *ngFor='let currentAnimal of childAnimalList'>
+      <td>{{currentAnimal.species}}</td>
+    </tr>
+  </tbody>
+</div>
