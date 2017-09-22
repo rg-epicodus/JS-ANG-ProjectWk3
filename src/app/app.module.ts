@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AnimalDisplayComponent } from './animal-display/animal-display.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
 import { EditAnimalComponent } from './edit-animal/edit-animal.component';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalDisplayComponent,
     NewAnimalComponent,
-    EditAnimalComponent
+    EditAnimalComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,

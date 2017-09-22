@@ -1,4 +1,11 @@
 <div class="container">
+
+  <select class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="onChange($event.target.value, currentAnimal)">
+    <option value="allAnimals" selected="selected">All Animals</option>
+    <option value="juvenile">Juvenile Animals</option>
+    <option value="mature">Mature Animals</option>
+  </select>
+
   <table class="table table-hover">
     <thead>
       <tr>
@@ -14,7 +21,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let currentAnimal of childAnimalList'>
+      <tr *ngFor='let currentAnimal of childAnimalList | age:filterByAge'>
         <td>{{currentAnimal.species}}</td>
         <td>{{currentAnimal.name}}</td>
         <td>{{currentAnimal.age}}</td>

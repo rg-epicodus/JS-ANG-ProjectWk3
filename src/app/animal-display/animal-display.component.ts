@@ -12,8 +12,14 @@ export class AnimalDisplayComponent {
   @Output() clickSender = new EventEmitter();
   species = 'Arctic Fox';
 
+  filterByAge: string = "allAnimals";
+
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
+  }
+
+  onChange(optionFromMenu){
+    this.filterByAge = optionFromMenu;
   }
 
 
