@@ -7,7 +7,7 @@ import { Animal } from 'app/animal.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Milwaukie Zoo!';
+  title = 'Oregon Zoo!';
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
