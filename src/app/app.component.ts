@@ -8,6 +8,7 @@ import { Animal } from 'app/animal.model';
 })
 export class AppComponent {
   title = 'Milwaukie Zoo!';
+  selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
     new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool Shade', 'Loud Noises'),
@@ -17,6 +18,15 @@ export class AppComponent {
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
+  }
+
+  editAnimal(clickedAnimal) {
+  console.log(clickedAnimal);
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
   }
 
 }
