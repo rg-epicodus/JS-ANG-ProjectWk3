@@ -1,6 +1,6 @@
 <div class="container">
 
-  <select class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="onChange($event.target.value, currentAnimal)">
+  <select class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="onChange($event.target.value, currentAnimal)" aria-label="sortbyage">
     <option value="allAnimals" selected="selected">All Animals</option>
     <option value="juvenile">Juvenile Animals</option>
     <option value="mature">Mature Animals</option>
@@ -31,7 +31,7 @@
         <td>{{currentAnimal.sex}}</td>
         <td>{{currentAnimal.likes}}</td>
         <td>{{currentAnimal.dislikes}}</td>
-        <td><button class="btn btn-info" (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button></td>
+        <td><button class="btn" (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button></td>
       </tr>
     </tbody>
   </table>

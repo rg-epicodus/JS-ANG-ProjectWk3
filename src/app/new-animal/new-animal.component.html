@@ -1,4 +1,4 @@
-<button class="btn btn-info" (click)="newAnimalForm = true">New Animal</button>
+<button class="btn" (click)="newAnimalForm = true">New Animal</button>
   <div *ngIf="newAnimalForm === true">
     <h1>New Animal</h1>
 
@@ -30,5 +30,5 @@
     <input #newDislikes required><br>
 
 
-    <button class="btn btn-info" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value = ''; newName.value = ''; newAge.value = ''; newDiet.value = ''; newLocation.value = ''; newCaretakers.value = ''; newSex.value = ''; newLikes.value = ''; newDislikes.value = ''; newAnimalForm = false">Add</button>
+    <button class="btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value = ''; newName.value = ''; newAge.value = ''; newDiet.value = ''; newLocation.value = ''; newCaretakers.value = ''; newSex.value = ''; newLikes.value = ''; newDislikes.value = ''; newAnimalForm = false">Add</button>
   </div>
