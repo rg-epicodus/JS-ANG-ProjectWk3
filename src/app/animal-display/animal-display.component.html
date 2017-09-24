@@ -1,9 +1,9 @@
 <div class="container">
 
-  <select class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="onChange($event.target.value, currentAnimal)" aria-label="sortbyage">
-    <option value="allAnimals" selected="selected">All Animals</option>
-    <option value="juvenile">Juvenile Animals</option>
-    <option value="mature">Mature Animals</option>
+  <select class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="onChange($event.target.value, currentAnimal)" aria-label="sort animals by age">
+    <option value="allAnimals" selected="selected" aria-label="sort by all animals">All Animals</option>
+    <option value="juvenile" aria-label="sort by juvenile animals">Juvenile Animals</option>
+    <option value="mature" aria-label="sort by mature animals">Mature Animals</option>
   </select>
 
   <table class="table table-hover">
@@ -31,7 +31,7 @@
         <td>{{currentAnimal.sex}}</td>
         <td>{{currentAnimal.likes}}</td>
         <td>{{currentAnimal.dislikes}}</td>
-        <td><button class="btn" (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button></td>
+        <td><button class="btn" (click)="editButtonHasBeenClicked(currentAnimal)" aria-label="edit animal">Edit</button></td>
       </tr>
     </tbody>
   </table>

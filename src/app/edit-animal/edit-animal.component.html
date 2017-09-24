@@ -8,10 +8,10 @@
       <input [(ngModel)]="childSelectedAnimal.species"><br> -->
 
       <label>Enter Animal name:</label>
-      <input [(ngModel)]="childSelectedAnimal.name"><br>
+      <input [(ngModel)]="childSelectedAnimal.name" aria-label="edit animal name"><br>
 
       <label>Enter Animal age:</label>
-      <input [(ngModel)]="childSelectedAnimal.age"><br>
+      <input [(ngModel)]="childSelectedAnimal.age" aria-label="edit animal age"><br>
 
       <!-- <label>Enter Animal diet:</label>
       <input [(ngModel)]="childSelectedAnimal.diet"><br> -->
@@ -20,7 +20,7 @@
       <input [(ngModel)]="childSelectedAnimal.location"><br> -->
 
       <label>Enter Animal caretakers:</label>
-      <input [(ngModel)]="childSelectedAnimal.caretakers"><br>
+      <input [(ngModel)]="childSelectedAnimal.caretakers" aria-label="edit animal caretakers"><br>
 
       <!-- <label>Enter Animal sex:</label>
       <input [(ngModel)]="childSelectedAnimal.sex"><br> -->
@@ -32,6 +32,6 @@
       <input [(ngModel)]="childSelectedAnimal.dislikes"><br> -->
 
 
-      <button class="btn" (click)="doneButtonClicked()">Done</button>
+      <button class="btn" (click)="doneButtonClicked()" aria-label="Done Editing">Done</button>
     </div>
   </div>

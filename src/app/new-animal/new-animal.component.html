@@ -1,34 +1,34 @@
-<button class="btn" (click)="newAnimalForm = true">New Animal</button>
+<button class="btn" (click)="newAnimalForm = true" aria-label="add new animal">New Animal</button>
   <div *ngIf="newAnimalForm === true">
     <h1>New Animal</h1>
 
     <label>Enter Animal species:</label>
-    <input #newSpecies required><br>
+    <input #newSpecies required aria-label="animal species"><br>
 
     <label>Enter Animal name:</label>
-    <input #newName required><br>
+    <input #newName required aria-label="animal name"><br>
 
     <label>Enter Animal age:</label>
-    <input #newAge required><br>
+    <input #newAge required aria-label="animal age"><br>
 
     <label>Enter Animal diet:</label>
-    <input #newDiet required><br>
+    <input #newDiet required aria-label="animal diet"><br>
 
     <label>Enter Animal location:</label>
-    <input #newLocation required><br>
+    <input #newLocation required aria-label="animal location"><br>
 
     <label>Enter Animal caretakers:</label>
-    <input #newCaretakers required><br>
+    <input #newCaretakers required aria-label="animal caretakers"><br>
 
     <label>Enter Animal sex:</label>
-    <input #newSex required><br>
+    <input #newSex required aria-label="animal sex"><br>
 
     <label>Enter Animal likes:</label>
-    <input #newLikes required><br>
+    <input #newLikes required aria-label="animal likes"><br>
 
     <label>Enter Animal dislikes:</label>
-    <input #newDislikes required><br>
+    <input #newDislikes required aria-label="animal dislikes"><br>
 
 
-    <button class="btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value = ''; newName.value = ''; newAge.value = ''; newDiet.value = ''; newLocation.value = ''; newCaretakers.value = ''; newSex.value = ''; newLikes.value = ''; newDislikes.value = ''; newAnimalForm = false">Add</button>
+    <button class="btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value = ''; newName.value = ''; newAge.value = ''; newDiet.value = ''; newLocation.value = ''; newCaretakers.value = ''; newSex.value = ''; newLikes.value = ''; newDislikes.value = ''; newAnimalForm = false" aria-label="finish adding new animal">Add</button>
   </div>
