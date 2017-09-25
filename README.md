@@ -33,7 +33,7 @@ This web application will do the following:
 | view animals by filter | young animals, mature animals | animals under 2, animals over 2 |
 | edit animal | updated info | new info for animal |
 
-![ScreenShot](/img/screenshot01.png)
+![ScreenShot](src/resources/img/screenshot01.png)
 
 
 ## Known Bugs
