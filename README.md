@@ -1,17 +1,11 @@
-# Template file Readme
+# Zoo Manager Admin Dashboard 
 This web application will do the following:
 
 * Application uses a model to organize data.
-* Components create display and behavior for your templates.
+* Components create display and behavior for the templates.
 * TypeScript is used throughout application; including variable data types.
 * Users can successfully create and edit instances of a model.
-* Models can be filtered using a pipe.
-* Project is in a polished, portfolio-quality state. (Clear code presentation, error free, basic styling, complete README, thoughtful UI, etc.)
-* README contains details on functionality you'd include in the future, given the opportunity.
-* Required functionality was in place by the Friday deadline.
-* Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
-
-
+* Models can be filtered
 
 
 ## Setup/Installation Requirements
